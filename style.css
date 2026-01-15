@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    background: white;
+    padding: 20px;
+}
+
+/* Cột trái */
+.left {
+    width: 30%;
+    padding-right: 20px;
+}
+
+.left h3 {
+    margin-top: 0;
+}
+
+.thumb {
+    background-color: #ccc;
+    height: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 60px;
+}
+
+/* Cột phải */
+.right {
+    width: 70%;
+}
+
+.date {
+    color: gray;
+    font-size: 14px;
+}
+
+.banner {
+    background-color: #bbb;
+    height: 200px;
+    margin: 15px 0;
+    text-align: center;
+    line-height: 200px;
+    font-size: 24px;
+}
