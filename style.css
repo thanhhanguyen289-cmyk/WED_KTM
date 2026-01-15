@@ -1,43 +1,66 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: #f1f1f1;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    background: white;
-    display: flex;
+body {
+    background-color: #f1f1f1;
     padding: 20px;
 }
 
-/* Cột trái */
-.sidebar {
-    width: 30%;
-    padding-right: 20px;
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.sidebar img {
+.left-column { flex: 30%; }
+.right-column { flex: 70%; }
+
+.section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.image-box, .main-image {
     width: 100%;
-    height: 60px;
-    object-fit: cover;
-    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;
+    background-color: #aaaaaa;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #000000;
 }
 
-/* Cột phải */
-.content {
-    width: 70%;
-}
+/* 3 boxes on the left */
+.image-box { height: 100px; margin: 10px 0; }
+.box-left-1 { background-image: url('anh2.jpg'); }
+.box-left-2 { background-image: url('anh3.jpg'); }
+.box-left-3 { background-image: url('anh4.jpg'); }
 
-.date {
-    color: gray;
-    font-size: 14px;
-}
-
-.big-image {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
+/* Large box on the right */
+.main-image {
+    height: 300px;
     margin: 15px 0;
+    background-image: url('anh1.jpg');
 }
 
+.image-box span, .main-image span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h2 { margin-top: 20px; font-size: 24px; text-transform: uppercase; }
+h4 { margin: 15px 0 5px 0; }
+p { font-size: 14px; line-height: 1.6; margin-bottom: 15px; color: #333333; }
+
+@media screen and (max-width: 700px) {
+    .container { flex-direction: column; }
+}
