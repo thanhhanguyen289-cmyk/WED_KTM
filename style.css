@@ -6,34 +6,27 @@ body {
 .container {
     width: 80%;
     margin: auto;
-    display: flex;
     background: white;
+    display: flex;
     padding: 20px;
 }
 
-.left {
+/* Cột trái */
+.sidebar {
     width: 30%;
     padding-right: 20px;
 }
 
-.right {
-    width: 70%;
-}
-
-.small-img {
-    background: #ccc;
+.sidebar img {
+    width: 100%;
     height: 60px;
+    object-fit: cover;
     margin-bottom: 10px;
-    text-align: center;
-    line-height: 60px;
 }
 
-.big-img {
-    background: #ccc;
-    height: 200px;
-    margin: 15px 0;
-    text-align: center;
-    line-height: 200px;
+/* Cột phải */
+.content {
+    width: 70%;
 }
 
 .date {
@@ -41,15 +34,10 @@ body {
     font-size: 14px;
 }
 
-.image-row {
-    display: flex;
-    gap: 10px;
-    margin-top: 15px;
+.big-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin: 15px 0;
 }
 
-.image-row img {
-    width: 22%;
-    height: 100px;
-    object-fit: cover;
-    border: 1px solid #ccc;
-}
