@@ -1,43 +1,39 @@
-* {
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
 }
 
 .container {
-    width: 900px;
+    width: 80%;
     margin: auto;
     display: flex;
     background: white;
     padding: 20px;
 }
 
-/* Cột trái */
 .left {
     width: 30%;
     padding-right: 20px;
 }
 
-.left h3 {
-    margin-top: 0;
+.right {
+    width: 70%;
 }
 
-.thumb {
-    background-color: #ccc;
+.small-img {
+    background: #ccc;
     height: 60px;
     margin-bottom: 10px;
     text-align: center;
     line-height: 60px;
 }
 
-/* Cột phải */
-.right {
-    width: 70%;
+.big-img {
+    background: #ccc;
+    height: 200px;
+    margin: 15px 0;
+    text-align: center;
+    line-height: 200px;
 }
 
 .date {
@@ -45,11 +41,15 @@ body {
     font-size: 14px;
 }
 
-.banner {
-    background-color: #bbb;
-    height: 200px;
-    margin: 15px 0;
-    text-align: center;
-    line-height: 200px;
-    font-size: 24px;
+.image-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.image-row img {
+    width: 22%;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ccc;
 }
